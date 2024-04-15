@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    $sal=prompt("Qual o seu salário?")
+    if($sal<1100){
+        $des=0.075
+        $apa="7.5%"
+    }
+    else{
+        if($sal<2203.49){
+        $des=0.09
+        $apa="9%"
+    }
+    else{
+        if($sal<3305.23){
+        $des=0.12
+        $apa="12%"
+    }
+    else{    
+        $des=0.14
+        $apa="14%"
+    }
+    }
+    }
+    document.write("<font size='5'>")
+    $result=$sal*(1-$des)
+    document.write("<table border='1' width-='400'>")
+    document.write("<tr>")
+    document.write("<td width='100'><b><font color='gray'> Seu salário </b></td>")
+    document.write("<td width='100'><b><font color='gray'> Alíquota </b></td>")
+    document.write("<td width='100'><b><font color='gray'> Resultado </b></td>")
+    document.write("</tr>")
+    document.write("<tr>")
+    document.write("<td width='100'><font color='blue'><b>", $sal, "</b></td>")
+    document.write("<td width='100'><b><font color='red'>", $apa, "</b></td>")
+    document.write("<td width='100'><b><font color='purple'>", $result, "</b></td>")
+    document.write("</tr>")
+
+    </script>
+</head>
+<body>    
+</body>
+</html>
